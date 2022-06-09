@@ -1,8 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>foodmob</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/f00e61946a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -13,13 +18,26 @@
             <h1><span>Food</span>Mob</h1>
         </div>
 
-        <div class="navManu">
-            <nav>
-                <a href="#">Heme</a>
+        <div id="navManu" class="navManu">
+            
+            <nav id="navlink">            
+  
+                <!-- <i class="fa-solid fa-square-xmark" onclick="hideMenu()" ></i> -->
+                <a href="#">Home</a>
                 <a href="#">Manu</a>
                 <a href="#">Contact</a>
                 <a href="#">About Us</a>
             </nav>
+
+            <a href="javascript:void(0);" class="iconM" onclick="myFunction()">
+
+              <!-- <i class="fa-solid fa-bars" onclick="showMenu()" ></i> -->
+
+              <i class="fa-solid fa-bars" ></i>
+
+
+            </a>
+
         </div>
 
         <div class="navAccountOp">
@@ -32,21 +50,22 @@
     <section Id="homeSlider">
         
             
-            <div class="flex">
+            <div class="flex sBanner">
                 <h1><span>Skip</span> The Diet, <br>Just Eat Healthy <br>With Food Network</h1>
 
                 <p>Imagine you don't need a diet because we provide <br> healthy and delicious food for you!</p>
                 <button class="sliderOrderButton">Order Food</button>
             </div>
 
-                <div class="flex headerImg">
+                <div class="flex headerImg sBanner">
                     <img src="img/Group 8425.png" alt="">
                 </div>
 
     </section>
+
     <section id="aboutSec">
 
-        <div class="aboutImg about">
+        <div class="aboutImg ">
             <img src="img/2nd.png" alt="">
         </div>
 
@@ -65,6 +84,7 @@
 
 
     </section>
+    
     <div class="title">
         <h1>My <span>recipies</span></h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -140,6 +160,39 @@
             <hr>
             <p>© 2021 Copyright All Rights Reserved By<span>Ashraf Uddin</span></p>
         </div>
+
+
+
+
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("navlink");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+
+
+
+
+
+        <!-- <script>
+
+            var navManu = document.getElementById("navManu");
+
+            function showMenu(){
+                navManu.style.right="0";
+            }
+            function hideMenu(){
+                navManu.style.right="-200";
+            }
+
+        </script> -->
+
 
 
 
